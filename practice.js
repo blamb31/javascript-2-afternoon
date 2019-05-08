@@ -25,6 +25,7 @@ let me = {
 
 me.name
 
+
 ////////// PROBLEM 2 //////////
 
 /*
@@ -76,11 +77,24 @@ favoriteThings['book'] = "Harry Potter"
 
 //Code here
 
+let backPack = {
+
+}
+
+let item = "firstPocket" 
+
+backPack[item] = "chapstick"
+backPack.color = "Gray"
+
+
+
 /*
   After you do the above, alert your entire backPack object.
 */
 
 //Code here
+
+backPack
 
 /*
 You probably noticed that it just alerted [object Object].
@@ -89,6 +103,8 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
+
+console.log(backPack)
 
 ////////// PROBLEM 4 //////////
 
@@ -110,6 +126,9 @@ var user2 = {
 */
 
 //Code Here
+
+user2.name  = 'Bryan G. Smith'
+user2.email = 'bryan.smith@devmounta.in'
 
 /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
 ////////// MOVE ONTO NEXT SECTION BEFORE WORKING ON THESE ////////////////
