@@ -94,7 +94,7 @@ backPack.color = "Gray"
 
 //Code here
 
-backPack
+
 
 /*
 You probably noticed that it just alerted [object Object].
@@ -104,7 +104,7 @@ Instead, console.log your whole backPack object and then check out the console.
 
 //Code here
 
-console.log(backPack)
+// console.log(backPack)
 
 ////////// PROBLEM 4 //////////
 
@@ -141,6 +141,8 @@ user2.email = 'bryan.smith@devmounta.in'
 
 //Code Here
 
+let methodCollection = {};
+
 /*
   Now add two methods (functions that are properties on objects) to your methodCollection object.
   One called 'alertHello' which alerts 'hello' and another method called 'logHello' which logs 'hello' to the console.
@@ -148,11 +150,25 @@ user2.email = 'bryan.smith@devmounta.in'
 
 //Code Here
 
+
+methodCollection.alertHello = function() {
+    alert("hello")
+  }
+
+methodCollection.logHello = function() {
+    console.log("hello")
+  }
+
+
 /*
   Now call your alertHello and logHello methods.
 */
 
 //Code Here
+
+// methodCollection.alertHello
+
+// methodCollection.logHello
 
 ////////// PROBLEM 6 //////////
 
@@ -163,11 +179,30 @@ user2.email = 'bryan.smith@devmounta.in'
 
 //Code Here
 
+function makePerson(name,birthday,ssn) {
+  let newObject = {}
+  newObject.name = name
+  newObject.birthday = birthday
+  newObject.ssn = ssn
+  return newObject
+}
+
 ////////// PROBLEM 7 //////////
 
 /*
-  Create a function called makeCard which takes in cardNumber, expirationDate, and securityCode to make a Credit Card object.
+  Create a function called makeCard which takes in cardNumber, expirationDate, and securityCode 
+  to make a Credit Card object.
   Return that object so that whenever you invoke makeCard, you get a brand new credit card.
 */
 
 //Code Here
+
+function makeCard (cardNumber,expirationDate,securityCode){
+  let newCard = {}
+  newCard.cardNumber = cardNumber;
+  newCard.expirationDate = expirationDate;
+  newCard.securityCode = securityCode;
+  return newCard
+}
+
+
